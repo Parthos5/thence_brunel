@@ -1,68 +1,123 @@
-.loginHead{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+.loginHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
 }
 
-.burnelLogo2{
-    width: 127.94px;
+.burnelLogo2 {
+  width: 127.94px;
   height: 47.39px;
   cursor: pointer;
 }
 
-.crossIconDiv{
-    width: 64px;
-    height: 64px;
-    border-radius: 40px;
-    border: 1px solid #CACACA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.crossIconDiv {
+  width: 64px;
+  height: 64px;
+  border-radius: 40px;
+  border: 1px solid #cacaca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.crossIcon{
-    width: 24px;
-    height: 24px;
+.crossIcon {
+  width: 24px;
+  height: 24px;
 }
 
-.registrationForm{
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.graceForm {
+  font-family: "Covered By Your Grace", cursive;
+  color: var(--green);
+  font-size: 2.25em;
+}
+
+.quoteForm {
+  font-weight: 600;
+  font-size: 3.5em;
+  text-align: center;
+  color: #1c1c1c;
+  line-height: 67.2px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding-top: 50px;
+}
+
+.submit {
+  width: 27.148vw;
+  height: 75px;
+  border-radius: 64px;
+  padding: 24px 36px 24px 36px;
+  font-size: 20px;
+  background-color: #c9c9c9;
+    color: var(--white);
+  margin-top: 60px;
+  cursor:pointer;
+}
+
+.submit .done {
+    background-color: red;
+    background: linear-gradient(97.55deg, #1c1c1c 2.63%, #454444 105.2%),
+    linear-gradient(0deg, #1c1c1c, #1c1c1c) !important;
+}
+
+
+.success{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    row-gap: 15px;
 }
 
-.graceForm{
+.successTick{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 45px;
+}
+
+.successGrace{
     font-family: "Covered By Your Grace", cursive;
-    color: var(--green);
     font-size: 2.25em;
+    color: var(--green);
 }
 
-.quoteForm{
+.successHead{
     font-weight: 600;
     font-size: 3.5em;
+    line-height: 67.2px;
     text-align: center;
     color: #1C1C1C;
-    line-height: 67.2px;
 }
 
-.inputs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-    padding-top: 50px;
+.successDesc{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.688em;
+    color: #727272;
+    width: 718px;
 }
 
-.submit{
-    width: 27.148vw;
-    height: 75px;
-    border-radius: 64px;
-    padding: 24px 36px 24px 36px;
-    font-size: 20px;
-    background: linear-gradient(97.55deg, #1C1C1C 2.63%, #454444 105.2%),
-linear-gradient(0deg, #1C1C1C, #1C1C1C);
-color: var(--white);
-margin-top: 70px;
+.redirect {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #727272; 
+    font-weight: 500;
+}
+
+.dark{
+    color: black !important;
 }
