@@ -1,0 +1,50 @@
+.trueContainer{
+    overflow: hidden; 
+    transition: height 0.5s ease-in-out; 
+}
+
+.QnaComp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 37.826vw;
+  cursor: pointer;
+}
+
+.QnaComp h2 {
+  width: 412px;
+  font-weight: 600;
+  font-size: 1.25em;
+  color: #1c1c1c;
+}
+
+.QnaComp img {
+  width: 24px;
+  height: 24px;
+}
+
+.answer {
+  width: 37.826vw;
+  color: #617275;
+  font-size: 0.938em;
+  padding-bottom: 25px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+hr {
+  transition: transform 0.5s ease-in-out;
+}
+
+.trueContainer.expanded hr {
+  transform: translateY(-100%);
+}

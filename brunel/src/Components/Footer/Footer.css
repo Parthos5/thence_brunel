@@ -1,0 +1,33 @@
+.footerDiv{
+    width: 89.583vw;
+    height: 144px;
+    border-radius: 40px;
+    padding: 60px;
+    background: #F5F5F5;
+    color:#1C1C1C;
+    font-weight: 500px;
+    font-size: 1.125em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.talupDiv{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.talupText{
+    font-weight: 500px;
+    font-size: 1em;
+}
+
+.tandc{
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    cursor: pointer;
+    column-gap: 30px;
+}

@@ -6,7 +6,9 @@ import statImg from "../../assets/statImg.png";
 import rocketIcon from "../../assets/rocketIcon.png";
 import sparkleIcon from "../../assets/sparkleIcon.png";
 import rightArrowIcon from "../../assets/rightArrowIcon.png";
-import unionArrowIcon from '../../assets/unionArrowIcon.png'
+import unionArrowIcon from "../../assets/unionArrowIcon.png";
+import QnaComp from "../../Components/QnaComp/QnaComp";
+import Footer from "../../Components/Footer/Footer";
 
 export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -28,28 +30,36 @@ export default function Home() {
   const qna = [
     {
       question: "Do you offer freelancers?",
-      answer: "Yes, our platform provides a diverse range of freelancers with various skill sets to meet your project needs."
+      answer:
+        "Yes, our platform provides a diverse range of freelancers with various skill sets to meet your project needs.",
     },
     {
-      question: "What's the guarantee that I will be satisfied with the hired talent?",
-      answer: "We offer a satisfaction guarantee with a refund or replacement policy if the hired talent does not meet your expectations."
+      question:
+        "What's the guarantee that I will be satisfied with the hired talent?",
+      answer:
+        "We offer a satisfaction guarantee with a refund or replacement policy if the hired talent does not meet your expectations.",
     },
     {
       question: "Can I hire multiple talents at once?",
-      answer: "If unhappy with a project, communicate with the freelancer, allow for revisions, and refer to the agreement. Escalate to platform support if needed, considering mediation. Review policies, seek collaborative solutions for resolution."
+      answer:
+        "If unhappy with a project, communicate with the freelancer, allow for revisions, and refer to the agreement. Escalate to platform support if needed, considering mediation. Review policies, seek collaborative solutions for resolution.",
     },
     {
       question: "Why should I not go to an agency directly?",
-      answer: "Our platform offers competitive rates, a wide selection of freelancers, and flexible hiring arrangements, which agencies may not provide."
+      answer:
+        "Our platform offers competitive rates, a wide selection of freelancers, and flexible hiring arrangements, which agencies may not provide.",
     },
     {
       question: "Who can help me pick a right skillset and duration for me?",
-      answer: "Our customer support team can assist you in selecting the right skillset and determining the appropriate duration for your project."
-    }
+      answer:
+        "Our customer support team can assist you in selecting the right skillset and determining the appropriate duration for your project.",
+    },
   ];
   return (
     <div>
       <MainNavbar />
+
+      {/* Hero Section Starts */}
       <div className="heroSect">
         <div className="heroHead">
           <div className="graceText">Success Stories</div>
@@ -186,18 +196,27 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Hero Section Ends */}
 
       <div className="qnaContainer">
         <div className="qnaDiv">
           <div className="qnaHeadDiv">
             <div className="qnaHead">
-              <p>What’s on your mind</p>
+              <p>What's on your mind</p>
               <h1>Ask Questions</h1>
             </div>
-            <img src={unionArrowIcon} alt="" />
+            <img src={unionArrowIcon} className="unionArrowIcon" alt="" />
           </div>
-          <div className="qnaList"></div>
+          <div className="qnaList">
+            {qna.map((q, index) => (
+              <QnaComp key={index} question={q.question} answer={q.answer} />
+            ))}
+          </div>
         </div>
+      </div>
+
+      <div className="footerContainer">
+        <Footer />
       </div>
     </div>
   );
