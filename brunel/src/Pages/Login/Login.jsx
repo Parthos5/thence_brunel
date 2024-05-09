@@ -2,6 +2,7 @@ import React from "react";
 import "./Login.css";
 import burnelLogo from "../../assets/burnelLogo.png";
 import crossIcon from "../../assets/crossIcon.png";
+import InputComp from "../../Components/InputComp/InputComp";
 
 export default function Login() {
   return (
@@ -15,7 +16,17 @@ export default function Login() {
 
       <div className="registrationForm">
         <p className="graceForm">Registration Form</p>
-        <p className="quoteForm">Start your success <br />Journey here!</p>
+        <p className="quoteForm">
+          Start your success <br />
+          Journey here!
+        </p>
+
+        <div className="inputs">
+          <InputComp type="name" />
+          <InputComp type="email" />
+        </div>
+
+        <button className="submit">Submit</button>
       </div>
     </div>
   );
