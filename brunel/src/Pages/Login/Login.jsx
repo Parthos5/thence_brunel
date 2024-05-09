@@ -12,6 +12,11 @@ export default function Login() {
           <img src={crossIcon} className="crossIcon" alt="" />
         </div>
       </div>
+
+      <div className="registrationForm">
+        <p className="graceForm">Registration Form</p>
+        <p className="quoteForm">Start your success <br />Journey here!</p>
+      </div>
     </div>
   );
 }
