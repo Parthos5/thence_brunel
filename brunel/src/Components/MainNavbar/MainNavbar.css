@@ -1,0 +1,29 @@
+.mainNavbarDiv {
+  width: 100vw;
+  height: 52.632vh;
+  display: flex;
+  justify-content: center;
+}
+
+.mainNavbarRect {
+  width: 91.579vw;
+  /* border: 1px solid #eaeaea; */
+  border: 1px solid black;
+  padding: 16.97px, 20.89px, 16.97px, 52.22px;
+  border-radius: 65.28px;
+  height: 111.17px;
+}
+
+.burnelLogo {
+  width: 127.94px;
+  height: 47.39px;
+  padding: 7.86px 0.17px 9.03px 6.78px;
+}
+
+.getProjectsBtn {
+  width: 12.471vw;
+  height: Hug (77.22px) px;
+  padding: 26.11px 41.78px 26.11px 41.78px;
+  border-radius: 107.06px;
+  border: 1.31px solid #eaeaea;
+}

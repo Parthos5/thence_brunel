@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --poppins: "Montserrat", sans-serif;
+  --lato: "Montserrat", sans-serif;
+  --taskBtn:#44924C;
+  --default: #0F172A
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body.dark {
+  --light: #221d2c;
+  --grey: #141219;
+  --dark: #fbfbfb;
+  --secdark: #cac3cd;
+  --projectCardBgLight: #0c0c1e;
+  --projectCardHeadLight: #fbfbfb;
+  --projectCardRegLight: rgba(170, 222, 243, 0.721);
+}
+
+body {
+  background: var(--grey);
+  overflow-x: hidden;
+}
