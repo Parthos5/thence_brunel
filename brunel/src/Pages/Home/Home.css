@@ -1,0 +1,25 @@
+.heroHead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graceText{
+    font-family:"Covered By Your Grace", cursive;
+    font-size: 2.25em;
+    color: var(--green);
+    text-align: center;
+}
+
+.heroHeadMain{
+    font-weight: 600;
+    font-size: 3.5em;
+    width: 39.237vw;
+    line-height: 67.2px;
+    text-align: center;
+}
+
+.subHeroDiv{
+    display: flex;
+    
+}

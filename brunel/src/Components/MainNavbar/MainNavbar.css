@@ -1,29 +1,69 @@
 .mainNavbarDiv {
   width: 100vw;
-  height: 52.632vh;
+  height: 26.632vh;
   display: flex;
   justify-content: center;
 }
 
 .mainNavbarRect {
-  width: 91.579vw;
-  /* border: 1px solid #eaeaea; */
-  border: 1px solid black;
+  margin-top: 24px;
+  column-gap: 45vw;
+  width: 96.579vw;
+  border: 1px solid #eaeaea;
+  /* border: 1px solid black; */
   padding: 16.97px, 20.89px, 16.97px, 52.22px;
   border-radius: 65.28px;
   height: 111.17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .burnelLogo {
   width: 127.94px;
-  height: 47.39px;
+  height: 60.39px;
   padding: 7.86px 0.17px 9.03px 6.78px;
+  cursor: pointer;
+}
+
+.mainNavCta {
+  display: flex;
+  align-items: center;
+  column-gap: 15.7px;
 }
 
 .getProjectsBtn {
   width: 12.471vw;
-  height: Hug (77.22px) px;
+  height: 77.22px;
+  font-size: 1.125em;
+  font-weight: 500;
   padding: 26.11px 41.78px 26.11px 41.78px;
   border-radius: 107.06px;
   border: 1.31px solid #eaeaea;
+  background: var(--white);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.getProjectsBtn:hover {
+  background: #f1f1f1;
+}
+
+.onboardBtn {
+  width: 14.671vw;
+  height: 77.22px;
+  border-radius: 107.06px;
+  /* padding: 26.11px 49.61px 26.11px 41.78px; */
+  background: linear-gradient(97.55deg, #1c1c1c 2.63%, #454444 105.2%),
+    linear-gradient(0deg, #1c1c1c, #1c1c1c);
+  font-weight: 600;
+  font-size: 1.125em;
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.onboardBtn:hover {
+  background: linear-gradient(97.55deg, #1c1c1c 2.63%, #454444 105.2%),
+    linear-gradient(0deg, #4e4e4e, #4e4e4e);
 }
