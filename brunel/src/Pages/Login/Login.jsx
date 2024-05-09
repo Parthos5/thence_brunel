@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom"; 
 import "./Login.css";
 import burnelLogo from "../../assets/burnelLogo.png";
 import crossIcon from "../../assets/crossIcon.png";
 import InputComp from "../../Components/InputComp/InputComp";
 import tick from "../../assets/tick.png";
-
+import { useNavigate } from "react-router-dom";
 export default function Login() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [infoSubmit, setInfoSubmit] = useState(false);
-  const history = useHistory(); 
-
+  const [time, setTime] = useState(5);
+  const navigate = useNavigate();
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
@@ -23,15 +22,14 @@ export default function Login() {
   const handleSubmit = () => {
     if (name && isValidEmail(email)) {
       setInfoSubmit(true);
-      // Navigate to "/" after 5 seconds
+      //   Navigate("/complete")
       setTimeout(() => {
-        history.push("/");
+        navigate("/");
       }, 5000);
     } else {
       setInfoSubmit(false);
     }
   };
-
   const isValidEmail = (email) => {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     return emailRegex.test(email);
