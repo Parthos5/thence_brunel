@@ -9,6 +9,7 @@ import rightArrowIcon from "../../assets/rightArrowIcon.png";
 import unionArrowIcon from "../../assets/unionArrowIcon.png";
 import QnaComp from "../../Components/QnaComp/QnaComp";
 import Footer from "../../Components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0);
