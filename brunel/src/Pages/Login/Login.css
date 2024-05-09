@@ -1,0 +1,27 @@
+.loginHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.burnelLogo2{
+    width: 127.94px;
+  height: 47.39px;
+  cursor: pointer;
+}
+
+.crossIconDiv{
+    width: 64px;
+    height: 64px;
+    border-radius: 40px;
+    border: 1px solid #CACACA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crossIcon{
+    width: 24px;
+    height: 24px;
+}
