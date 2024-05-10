@@ -136,8 +136,8 @@ export default function Home() {
                   style: {
                     position: "absolute", // Positioning the dots absolutely to control their location
                     bottom: "5px", // Decrease the gap between the carousel and the dots
-                    left: "10%", // Align the dots slightly to the left
-                    width: "80%", // Adjust the width to center the dots within the modified left alignment
+                    left: "0%", // Align the dots slightly to the left
+                    width: "8%", // Adjust the width to center the dots within the modified left alignment
                     display: "flex", // Use flexbox to align items
                     justifyContent: "flex-start", // Align items to the start of the flex container
                     paddingLeft: "20px", // Add some padding to the left for additional margin

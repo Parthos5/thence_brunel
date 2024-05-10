@@ -54,8 +54,7 @@
   height: 77.22px;
   border-radius: 107.06px;
   /* padding: 26.11px 49.61px 26.11px 41.78px; */
-  background: linear-gradient(97.55deg, #1c1c1c 2.63%, #454444 105.2%),
-    linear-gradient(0deg, #1c1c1c, #1c1c1c);
+  background-color: rgb(28, 28, 28);
   font-weight: 600;
   font-size: 1.125em;
   color: var(--white);

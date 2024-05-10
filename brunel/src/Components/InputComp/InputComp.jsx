@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './InputComp.css';
+import exclaim from '../../assets/exclaim.png'
 
 export default function InputComp(props) {
   const { type, value, onChange, placeholder } = props;
@@ -10,7 +11,7 @@ export default function InputComp(props) {
     if (type === 'email') {
       const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
       if (!emailRegex.test(value)) {
-        setError(' ! Please enter a valid email address');
+        setError(' Please enter a valid email address');
       } else {
         setError('');
         onChange(event); // Call onChange if email is valid
@@ -32,7 +33,7 @@ export default function InputComp(props) {
           aria-describedby={error ? 'error-message' : undefined}
         />
         {type === 'email' && error && (
-          <div id="error-message" className="errorMessage">{error}</div>
+          <div id="error-message" className="errorMessage"><img src={exclaim} alt="" />{error}</div>
         )}
       </div>
     </>
