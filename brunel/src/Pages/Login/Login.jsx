@@ -5,6 +5,7 @@ import crossIcon from "../../assets/crossIcon.png";
 import InputComp from "../../Components/InputComp/InputComp";
 import tick from "../../assets/tick.png";
 import { useNavigate } from "react-router-dom";
+
 export default function Login() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -35,11 +36,15 @@ export default function Login() {
     return emailRegex.test(email);
   };
 
+  function handleCross(){
+    navigate("/")
+  }
+
   return (
     <div>
       <div className="loginHead">
-        <img src={burnelLogo} className="burnelLogo2" alt="" />
-        <div className="crossIconDiv">
+        <img src={burnelLogo} onClick={handleCross} className="burnelLogo2" alt="" />
+        <div className="crossIconDiv"  onClick={handleCross}>
           <img src={crossIcon} className="crossIcon" alt="" />
         </div>
       </div>
