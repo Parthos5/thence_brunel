@@ -1,7 +1,4 @@
 # thence_brunel
-Sure, here's a template you can use to provide deployment links and instructions to start the project locally in your GitHub repository:
-
----
 
 ### Deployment
 
